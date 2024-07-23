@@ -27,8 +27,12 @@ const Presentation = () => {
                 />
               </div>
               <div className={styles.userCardInfo}>
-                <p> Me recibi en el años 2023</p>
-                <p> Soy Análista de Sistema y Programador Full Stack</p>
+                
+                <p className={styles.parrafo}> Me recibi en el años 2023</p>
+               
+                <p className={styles.parrafo01}> Soy Análista de Sistema y Programador Full Stack</p>
+                <p className={styles.parrafo01}> 2 años de Experiencia</p>
+                
                 
               </div>
             </div>

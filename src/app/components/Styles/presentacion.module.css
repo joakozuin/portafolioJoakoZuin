@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 6px;
-    min-height: 75vh;
+    min-height: 20vh;
 }
 .contenedorImg {
     height: 200%;
@@ -65,7 +65,7 @@
   }
   .userCardInfo {
     text-align: center;
-    margin-top: 90px;
+    margin-top: 85px;
   }
   
   .userCardInfo h2 h3 {
@@ -77,15 +77,24 @@
   
   .userCardInfo p {
     font-size: 15px;
-    margin-bottom: 2px;
+    /* margin-bottom: 5px; */
+    /* margin-top: 5px; */
     text-align: center;
     font-size: 25px;
     font-family: serif;
   }
-  .userCardInfo p span {
-   font-weight: 700;
-   margin-right: 10px;
+  .parrafo{
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-right: 10px;
   }
+  .parrafo01{
+    margin-bottom: 15px;
+    font-weight: 00;
+  }
+
+
+
   @media only screen and (min-width: 768px) {
     .userCard {
       flex-direction: row;

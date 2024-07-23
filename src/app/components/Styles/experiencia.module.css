@@ -1,23 +1,23 @@
+/*  */
+
 .padre{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 3px;
-    min-height: 20vh;
+    padding: 6px;
+    min-height: 50vh;
 }
 .contenedorImg {
     height: 200%;
     width: 100%;
-    /* background: #daa000;  */ 
-    /* background-image: url('../../assets/img/lago.jpg');  */
     font-family: 'Montserrat', sans-serif;
   }
   .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 12px;
+    /* padding-top: 12px; */
     padding-bottom: 12px;
   }
   .userCard {
@@ -28,7 +28,7 @@
    background-color: #ffffff5d;
    border-radius: 10px;
    padding: 40px;
-   width: 500px;
+   width: 919px;
    position: relative;
    overflow: hidden;
    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
@@ -39,51 +39,34 @@
     position: absolute;
     height: 300%;
     width: 173px;
-   /*  background: #7aa9f0a4;
-    top: -70px;
-    left: -150px; */
+    /* background: #7aa9f0a4; */
+    top: -50px;
+    left: -135px;
     z-index: 0;
     transform: rotate(17deg);
   }
   
- /*  .userCardImg {
+  .userCardImg {
     display: flex;
     justify-content: center;
     align-items: center;   
     z-index: 3;
-  } */
+  }
   
-  /* .userCardImg, .imagen {
+  .userCardImg, .imagen {
     border-radius: 25px;
     transition: .2s;
     object-fit: cover;
   }
   .userCardImg, .imagen  :hover {
     box-shadow: 0 0 0 5px rgba(43, 68, 68, 0.404);
-  } */
+  }
   .userCardInfo {
     text-align: center;
+    margin-left: 15px;
     /* margin-top: 90px; */
   }
-  
-  .userCardInfo h3 h4 h5 {
-    /* font-size: 25px; */
-    margin: 0;
-    margin-bottom: 10px;
-    /* font-family: 'Bebas Neue', sans-serif; */
-    text-align: center;
-    font-size: 30px;
-    font-family: serif;
-  }
-  
-  .userCardInfo p {
-    font-size: 15px;
-    /* margin-bottom: 2px; */
-  }
-  .userCardInfo p span {
-   font-weight: 700;
-   margin-right: 10px;
-  }
+
   @media only screen and (min-width: 768px) {
     .userCard {
       flex-direction: row;
@@ -121,9 +104,29 @@
        font-size: 20px;
     }
   }
-
+  /*  */
+  .socialsIconsContainer{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    /* margin-top: 40px; */
+}
 .name{
     text-align: center;
     font-size: 30px;
-    font-family: serif;
 }
+
+.porotitoFron{
+    color: blue;
+}
+.porotitoBack{
+    color: yellow;
+}
+.porotitoBD{
+    color: green;
+}
+.title{
+    margin: 30px 0px 30px 0px;
+  
+  }
