@@ -16,3 +16,92 @@
     z-index: 9999;
    justify-content: center;
 }
+/* 
+ */
+
+ .footerContainer {
+    display: flex;
+    width: 100%;
+    height: 5rem; 
+    background: linear-gradient(90deg, #ece2c6 5%,#FFFACD 30%, #7FFFD4 66%, #40E0D0 70%, #AFEEEE 100%)0% 0% no-repeat padding-box; background: linear-gradient(90deg, #ece2c6,#FFFACD, #7FFFD4, #40E0D0, #AFEEEE);
+    /* background: linear-gradient(90deg, rgb(253, 255, 254) 0%, rgba(159, 226, 252, 0.808) 59%, #ece2c6 100%); */
+    /* background: transparent linear-gradient(90deg, #da9500 5%, #e2005c 30%, #7211b7 66%, #4cd7e5 100%) 0% 0% no-repeat padding-box; */
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.153);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    /* position: fixed; */
+    z-index: 9999;
+}
+
+.policyContactAnnounce{
+    display: flex;
+    gap: 18px;
+    font-weight: 500;
+    
+}
+
+.socials{
+    display: flex;
+    gap: 18px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.iconContainer {
+    display: inline-block;
+    padding: 2px;
+    background-color: white; /* Color de fondo */
+    border-radius: 50%;
+  }
+
+.instagramIcon {
+    color: #3F0B6D; /* Color de la línea del ícono */
+    background-color: white;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.socialsIconsContainer{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 1280px) {
+    .footerContainer {
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerContainer {
+        padding: 1rem 2rem;
+    }
+    .policyContactAnnounce, .socials{
+        font-size: .6rem; 
+     }
+}
+
+@media (max-width: 480px) {
+    .footerContainer {
+        flex-direction: column;
+        padding: 8px; 
+        gap: 4px;
+        padding-bottom: 2rem;
+        font-size: 12px;
+    }
+    .policyContactAnnounce, .socials{
+       font-size: .6rem; 
+    }
+}
+.Logo{
+    max-width: 100%;
+    font-size: 40px;
+    font-family: serif;
+  }
+  .Logo:hover {
+    color: #7aa9f0a4;
+}

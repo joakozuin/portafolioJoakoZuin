@@ -10,7 +10,7 @@ const Header = () => {
     <div>
       <Navbar expand="lg" className={styles.header} >
         <Container fluid>
-          <Navbar.Brand href="/" className={styles.headerLogo} >
+          <Navbar.Brand href="/" className={styles.Logo} >
                   JSZ
             </Navbar.Brand>
         </Container>
