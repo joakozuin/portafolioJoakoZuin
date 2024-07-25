@@ -13,12 +13,12 @@ const Networks = () => {
                 
                   <div className={styles.socialsIconsContainer}>
                     <div>
-                    <FaFacebook size={40} className={styles.social} />
-                    <FaInstagram size={40}  className={styles.social}/>
-                    <FaLinkedin size={40}  className={styles.social}/>
-                    <FaGithub size={40}  className={styles.social}/>
-                    <FaEnvelope size={40} className={styles.social}/>
-                    <FaSquareWhatsapp size={40}  className={styles.social}/>
+                    <FaFacebook size={27} className={styles.social} />
+                    <FaInstagram size={27}  className={styles.social}/>
+                    <FaLinkedin size={27}  className={styles.social}/>
+                    <FaGithub size={27}  className={styles.social}/>
+                    <FaEnvelope size={27} className={styles.social}/>
+                    <FaSquareWhatsapp size={27}  className={styles.social}/>
                     </div>
                   </div>
                 

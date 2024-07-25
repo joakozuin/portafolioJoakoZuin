@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: stretch;
     padding: 3px;
     min-height: 50vh;
@@ -35,7 +35,7 @@
   .BordeCart{
     /*width: 18rem;*/
     background-color: azure;
-    margin: 15px 0px 20px 15px;
+    margin: 15px 0px 20px 10px;
     width: 400px;
     border-radius: 20px 20px 20px 0px;
     box-shadow: 13px 12px 10px 0px  #1fffdd88;
@@ -57,15 +57,61 @@
   text-align: center;
 }
   .ListGroup0{
-    width: 200px;
+    /* width: 200px; */
     /* text-align: center; */
     
   }
   .listItem0{
     padding: 0px;
     padding-top: 5px;
-    text-align: center;
+    /* text-align: center; */
     margin-top: 5px;
     margin-bottom: 15px;
   }
+  .strong{
+    margin-left: 4px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /*  background-color: #40E0D0 ; */
+    background-color: #ece2c6 ;
+    
+    border-radius: 10px;
+    width: 180px;
+    margin: auto;
+    /* border: 1px solid #ece2c6; */
+    cursor: pointer;
+   /*  text-align: center; */
+    padding: .4rem 1.25rem;
+   /*  transition: background-color 0.3s, color 0.3s; */
+    box-sizing: border-box;
+    font-weight: 700;
+   /*  width: 50%; */
+    margin-bottom: 8px;
+  }
+  
+  .buttons a,
+  .buttons button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: inherit;
+    color: black;
+    cursor: pointer;
+    /* background-color: #FFFFFF; */
+    border-radius: 50px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .buttons:hover {
+    background-color: #40E0D0;
+  }
+  
 
