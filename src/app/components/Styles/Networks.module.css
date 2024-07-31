@@ -1,145 +1,83 @@
-.padre{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3px;
-    min-height: 20vh;
-}
-.contenedorImg {
-    height: 200%;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-  }
-  .wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-  .userCard {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   /* background-color: #ffffff5d; */
-   border-radius: 10px;
-   padding: 40px;
-   width: 500px;
-   position: relative;
-   overflow: hidden;
-   /* box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5); */
-  }
-  
-  .userCard:before {
-    content: '';
-    position: absolute;
-    height: 300%;
-    width: 173px;
-   /*  background: #7aa9f0a4;
-    top: -70px;
-    left: -150px; */
-    z-index: 0;
-    transform: rotate(17deg);
-  }
-  
-  .userCardInfo {
-    text-align: center;
-    /* margin-top: 90px; */
-  }
-  
-  .userCardInfo h3 h4 h5 {
-    /* font-size: 25px; */
-    margin: 0;
-    margin-bottom: 10px;
-    /* font-family: 'Bebas Neue', sans-serif; */
-    text-align: center;
-    font-size: 30px;
-    font-family: serif;
-  }
-  
-  .userCardInfo p {
-    font-size: 15px;
-    /* margin-bottom: 2px; */
-  }
-  .userCardInfo p span {
-   font-weight: 700;
-   margin-right: 10px;
-  }
-  @media only screen and (min-width: 768px) {
-    .userCard {
-      flex-direction: row;
-      align-items: flex-start;
-    }   
-    .userCardImg {
-      margin-right: 20px;
-      margin-bottom: 0;
-    }
-  
-    .userCardInfo {
-      text-align: left;
-    }
-  }
-  
-  @media (max-width: 767px){
-    .wrapper{
-       padding-top: 3%;
-    }
-    .userCard:before {
-       width: 300%;
-       height: 200px;
-       transform: rotate(0);
-    }
-    .userCardInfo{
-      margin-top:15px
-    }
-  
-    .userCardInfo h2 h3{
-       font-size: 20px;
-    }
-    .userCardInfo p  {
-       display: block;
-       margin-bottom: 15px;
-       font-size: 20px;
-    }
-  }
-
-.name{
-    text-align: center;
-    font-size: 30px;
-    font-family: serif;
+.padre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100vh; */
 }
 
-.socialsIconsContainer{
-  margin: 1px 0px 0px 20px;
-}
-.social{
-  margin: 0px 20px 0px 0px;
+.h1 {
+  margin-bottom: 20px;
 }
 
-.socialFece{
-  margin: 0px 20px 0px 0px;
-  color: blue;
+.socialsIconsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.socialLike{
-  margin: 0px 20px 0px 0px;
-  color: rgb(2, 27, 253);
+
+.buttonIncon {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
 }
-.socialGithub{
-  margin: 0px 20px 0px 0px;
-  color: orange;
+.buttonIncon svg path{
+  fill: #ccc;
 }
-.socialIns{
-  margin: 0px 20px 0px 0px;
-  color: #f09433; 
-  color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  color: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
- 
+
+.buttonIncon:hover {
+  transform: scale(1.1);
 }
-.socialWhta{
-  margin: 0px 20px 0px 0px;
-  color: green;
+
+.socialsIconsContainer svg {
+  width: 28px;
+  height: 28px;
+}
+
+.socialsIconsContainer svg path {
+  fill:#777; 
+}
+
+.socialsIconsContainer svg:nth-child(2) path {
+  fill: #E1306C; /* Instagram */
+}
+
+.socialsIconsContainer svg:nth-child(3) path {
+  fill: #0077b5; /* LinkedIn */
+}
+
+
+.socialsIconsContainer svg:nth-child(4) path {
+  fill: #171515; /* GitHub */
+}
+
+.buttonIncon:hover {
+  transform: scale(1.1);
+}
+
+.buttonIncon:nth-child(1):hover svg path {
+  fill: #4267B2; /* Facebook */
+}
+
+.buttonIncon:nth-child(2):hover svg path {
+  fill: #E1306C; /* Instagram */
+}
+
+.buttonIncon:nth-child(3):hover svg path {
+  fill: #0077b5; /* LinkedIn */
+}
+
+
+.buttonIncon:nth-child(4):hover svg path {
+  fill: #171515; /* GitHub */
+}
+
+@media (max-width: 768px) {
+  .padre {
+    height: auto;
+  }
+  .socialsIconsContainer {
+    flex-direction: row;
+  }
 }

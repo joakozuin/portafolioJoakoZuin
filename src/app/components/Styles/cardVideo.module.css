@@ -1,117 +1,132 @@
-.padre{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    padding: 3px;
-    min-height: 50vh;
-}
 
-
-.title01{
-  /* margin: 30px 0px 30px 0px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3px;
-}
-
-
-.TitleName{
-    text-align: center;
-    margin:  10px 0px 0px 0px;
-    color: rgb(0, 0, 14);
-    font-size: 18px;
-    font-weight: bold;
-    }
-  
-  .Title {
-      font-size: 13px;
-      text-align: center;
-  }
-
-  .BordeCart{
-    /*width: 18rem;*/
-    background-color: azure;
-    margin: 15px 0px 20px 10px;
-    width: 400px;
-    border-radius: 20px 20px 20px 0px;
-    box-shadow: 13px 12px 10px 0px  #1fffdd88;
-    border:3px solid rgba(8, 8, 0, 0.612); 
-  
-  }
-
-/*   .videoContenedor{
-    width: 100px;
-    
-    background: linear-gradient(90deg, #ece2c6 5%,#FFFACD 30%, #7FFFD4 66%, #40E0D0 70%, #AFEEEE 100%)0% 0% no-repeat padding-box;
-    border: solid 1px red;
-} */
-.video{
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  margin: auto;
-/*   width: 400px;
-  height: 400px; */
-  text-align: center;
 }
-  .ListGroup0{
-    /* width: 200px; */
-    /* text-align: center; */
-    
-  }
-  .listItem0{
-    padding: 0px;
-    padding-top: 5px;
-    /* text-align: center; */
-    margin-top: 5px;
-    margin-bottom: 15px;
-  }
-  .strong{
-    margin-left: 4px;
-  }
 
-  .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   /*  background-color: #40E0D0 ; */
-    background-color: #ece2c6 ;
-    
-    border-radius: 10px;
-    width: 180px;
-    margin: auto;
-    /* border: 1px solid #ece2c6; */
-    cursor: pointer;
-   /*  text-align: center; */
-    padding: .4rem 1.25rem;
-   /*  transition: background-color 0.3s, color 0.3s; */
-    box-sizing: border-box;
-    font-weight: 700;
-   /*  width: 50%; */
-    margin-bottom: 8px;
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 20px;
+  width: calc(33.33% - 40px);
+  border: 1px solid #87CEEB;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  box-shadow: 13px 12px 10px 0px #53636088;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: calc(50% - 40px);
   }
-  
-  .buttons a,
-  .buttons button {
-    all: unset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+@media (max-width: 768px) {
+  .card {
     width: 100%;
-    text-align: center;
-    font-size: 14px;
-    font-weight: inherit;
-    color: black;
-    cursor: pointer;
-    /* background-color: #FFFFFF; */
-    border-radius: 50px;
-    transition: color 0.3s, background-color 0.3s;
+    margin: 20px auto;
   }
-  
-  .buttons:hover {
-    background-color: #40E0D0;
-  }
-  
+}
 
+.card .TitleName {
+  text-align: center;
+  margin: 20px;
+}
+
+.card:hover {
+  border-color: #6495ED;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-body {
+  padding: 20px;
+}
+
+.card .card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .videoContenedor {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.card .ListGroup0 {
+  margin-bottom: 20px;
+}
+
+.card .listItem0 {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card .listItem0:last-child {
+  border-bottom: none;
+}
+
+.card .buttonBlock {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card .buttonProfile {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.card .buttons {
+  background-color: #3dc1c1;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card .buttons:hover {
+  background-color: #40E0D0;
+}
+
+.loading {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,114 +1,137 @@
 
-.padre{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px;
-    min-height: 40vh;
+/* .padre {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.title {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
 .contenedorImg {
-    height: 200%;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.userCard {
+  background-color: #ffffff5d;
+  border-radius: 10px;
+  padding: 40px;
+  width: 775px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .padre {
+    margin: 20px auto;
+    padding: 10px;
   }
-  .wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding-top: 12px; */
-    /* padding-bottom: 12px; */
+  .title {
+    font-size: 18px;
+  }
+  .contenedorImg {
+    margin-top: 10px;
+  }
+  .wrapper {
+    max-width: 300px;
   }
   .userCard {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   background-color: #ffffff5d;
-   border-radius: 10px;
-   padding: 40px;
-   width: 775px;
-   position: relative;
-   overflow: hidden;
-   box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 90%;
   }
-  
-  .userCard:before {
-    content: '';
-    position: absolute;
-    height: 300%;
-    width: 173px;
-/*     background: #7aa9f0a4;
-    top: -60px;
-    left: -125px; */
-    z-index: 0;
-    transform: rotate(17deg);
-  }
-  
-  .userCardImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    z-index: 3;
-    
-  }
-  
-  .userCardInfo {
-    /* text-align: justify; */
-    font-size: 20px;
-  }
+} */
 
-  .userCardInfo li {
-    margin-top: 5px;
-    font-weight: 500;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .userCard {
-      flex-direction: row;
-      align-items: flex-start;
-    }   
-  
-    .userCardInfo {
-      text-align: left;
-    }
-  }
-  
-  @media (max-width: 767px){
-    .wrapper{
-       padding-top: 3%;
-    }
-    .userCard:before {
-       width: 300%;
-       height: 200px;
-       transform: rotate(0);
-    }
-    .userCardInfo{
-      margin-top:15px
-    }
-  
-    .userCardInfo h2 h3{
-       font-size: 20px;
-    }
-    .userCardInfo p  {
-       display: block;
-       margin-bottom: 15px;
-       font-size: 20px;
-    }
-  }
-  /*  */
-  .socialsIconsContainer{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: center;
-    margin-top: 40px;
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #6495ED;
 }
-.name{
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.wrapper {
+  background-color: #ffffff5d;
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%; /* Cambiar a ancho relativo */
+  max-width: 775px; /* Agregar un ancho máximo */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  margin-bottom: 10px;
+}
+
+/* Agregar reglas para diferentes tamaños de pantalla */
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .wrapper {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .wrapper {
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+  }
+  .wrapper .p{
     text-align: center;
-    font-size: 30px;
-}
-.title{
-  margin: 30px 0px 30px 0px;
-
+   
+  }
 }
